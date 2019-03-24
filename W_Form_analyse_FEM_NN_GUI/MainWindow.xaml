@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:W_Form_analyse_FEM_NN_GUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="823.53" Width="1063.039">
+        Title="MainWindow" Height="823.53" Width="1063.039" Closed="Window_Closed">
     <Grid>
         <Button x:Name="button_generateNN" Content="generate NN result" HorizontalAlignment="Left" Margin="587,679,0,0" VerticalAlignment="Top" Width="166" Click="button_generateNN_Click" Height="49"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="496" Margin="81,29,0,0" VerticalAlignment="Top" Width="719" Source="Properties/cell.png"/>
