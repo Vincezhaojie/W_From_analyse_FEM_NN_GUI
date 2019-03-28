@@ -43,6 +43,7 @@ namespace W_Form_analyse_FEM_NN_GUI
             InitializeComponent();
             dir = "D:\\TUD\\7.Semeter\\SA\\SA_code\\c#\\W_Form_analyse_FEM_NN_GUI\\W_Form_analyse_FEM_NN_GUI";
             #region start SW
+            
             Console.WriteLine("starting SolidWorks");
             try
             {
@@ -54,6 +55,7 @@ namespace W_Form_analyse_FEM_NN_GUI
                 swApp.Visible = false;
             }
             Console.WriteLine("SolidWorks successfully started");
+            
             #endregion
         }
 
@@ -79,7 +81,7 @@ namespace W_Form_analyse_FEM_NN_GUI
             }
 
             //MinMaxScaler
-            testArray[0, 0] = (testArray[0, 0] - 2) / (14 - 2);
+            testArray[0, 0] = (testArray[0, 0] - 2) / (4 - 2);
             testArray[0, 1] = (testArray[0, 1] - 3) / (9 - 3);
             testArray[0, 2] = (testArray[0, 2] - 1) / (9 - 1);
             testArray[0, 3] = (testArray[0, 3] - 24) / (31 - 24);
@@ -102,7 +104,7 @@ namespace W_Form_analyse_FEM_NN_GUI
             {
                 var tensor = CreateTensorFromArray(testArray);
                 var runner = session.GetRunner();
-                runner.AddInput(graph["dense_input"][0], tensor).Fetch(graph["dense_4/BiasAdd"][0]);
+                runner.AddInput(graph["dense_input"][0], tensor).Fetch(graph["dense_5/BiasAdd"][0]);
                 var output = runner.Run();
                 var result = output[0];
                 var val = (float[,])result.GetValue(jagged: false);

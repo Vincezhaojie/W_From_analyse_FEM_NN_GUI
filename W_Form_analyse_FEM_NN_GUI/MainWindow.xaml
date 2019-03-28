@@ -10,25 +10,25 @@
         <Button x:Name="button_generateNN" Content="generate NN result" HorizontalAlignment="Left" Margin="587,679,0,0" VerticalAlignment="Top" Width="166" Click="button_generateNN_Click" Height="49"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="496" Margin="81,29,0,0" VerticalAlignment="Top" Width="719" Source="Properties/cell.png"/>
         <Label x:Name="label" Content="L1(mm):" HorizontalAlignment="Left" Margin="162,26,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox_l1" HorizontalAlignment="Left" Height="23" Margin="231,26,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="90"/>
+        <TextBox x:Name="textBox_l1" HorizontalAlignment="Left" Height="23" Margin="231,26,0,0" TextWrapping="Wrap" Text="26" VerticalAlignment="Top" Width="90"/>
         <Label x:Name="label_Copy" Content="L2(mm):" HorizontalAlignment="Left" Margin="490,214,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox_l2" HorizontalAlignment="Left" Height="23" Margin="559,214,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="90"/>
+        <TextBox x:Name="textBox_l2" HorizontalAlignment="Left" Height="23" Margin="559,214,0,0" TextWrapping="Wrap" Text="18" VerticalAlignment="Top" Width="90"/>
         <Label x:Name="label_Copy1" Content="L3(mm):" HorizontalAlignment="Left" Margin="490,480,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox_l3" HorizontalAlignment="Left" Height="23" Margin="559,480,0,0" TextWrapping="Wrap" Text="25" VerticalAlignment="Top" Width="90"/>
+        <TextBox x:Name="textBox_l3" HorizontalAlignment="Left" Height="23" Margin="559,480,0,0" TextWrapping="Wrap" Text="16" VerticalAlignment="Top" Width="90"/>
         <Label x:Name="label_Copy2" Content="width(mm):" HorizontalAlignment="Left" Margin="183,226,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox_width" HorizontalAlignment="Left" Height="23" Margin="264,226,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="90"/>
+        <TextBox x:Name="textBox_width" HorizontalAlignment="Left" Height="23" Margin="264,226,0,0" TextWrapping="Wrap" Text="6" VerticalAlignment="Top" Width="90"/>
         <Label x:Name="label_Copy3" Content="thickness(mm):" HorizontalAlignment="Left" Margin="818,68,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="textBox_thickness" HorizontalAlignment="Left" Height="23" Margin="919,70,0,0" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="112"/>
         <Image x:Name="image1" HorizontalAlignment="Left" Height="262" Margin="818,98,0,0" VerticalAlignment="Top" Width="213" Source="Properties/force.png"/>
         <Label x:Name="label1" Content="a cell" HorizontalAlignment="Left" Margin="414,530,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Label x:Name="label2" Content="how many cells?" HorizontalAlignment="Left" Margin="818,29,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox_hm_cells" HorizontalAlignment="Left" Height="23" Margin="927,31,0,0" TextWrapping="Wrap" Text="4" VerticalAlignment="Top" Width="104"/>
+        <TextBox x:Name="textBox_hm_cells" HorizontalAlignment="Left" Height="23" Margin="927,31,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" Width="104"/>
         <Label x:Name="label3" Content="F1(N):" HorizontalAlignment="Left" Margin="818,375,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox_F1" HorizontalAlignment="Left" Height="23" Margin="867,377,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="164"/>
+        <TextBox x:Name="textBox_F1" HorizontalAlignment="Left" Height="23" Margin="867,377,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="55"/>
         <Label x:Name="label3_Copy" Content="F2(N):" HorizontalAlignment="Left" Margin="818,403,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox_F2" HorizontalAlignment="Left" Height="23" Margin="867,405,0,0" TextWrapping="Wrap" Text="15" VerticalAlignment="Top" Width="164"/>
+        <TextBox x:Name="textBox_F2" HorizontalAlignment="Left" Height="23" Margin="867,405,0,0" TextWrapping="Wrap" Text="15" VerticalAlignment="Top" Width="55"/>
         <Label x:Name="label3_Copy1" Content="F3(N):" HorizontalAlignment="Left" Margin="818,431,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox_F3" HorizontalAlignment="Left" Height="23" Margin="867,433,0,0" TextWrapping="Wrap" Text="22" VerticalAlignment="Top" Width="164"/>
+        <TextBox x:Name="textBox_F3" HorizontalAlignment="Left" Height="23" Margin="867,433,0,0" TextWrapping="Wrap" Text="22" VerticalAlignment="Top" Width="55"/>
         <Label x:Name="label4" Content="FEM result" HorizontalAlignment="Left" Margin="315,592,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Label x:Name="label4_Copy" Content="NN result" HorizontalAlignment="Left" Margin="615,592,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Button x:Name="button_generateFEM" Content="generate FEM result" HorizontalAlignment="Left" Margin="286,679,0,0" VerticalAlignment="Top" Width="166" Height="49" Click="Button_generateFEM_Click"/>
@@ -39,6 +39,15 @@
         <Label x:Name="label4_Copy1" Content="Error" HorizontalAlignment="Left" Margin="880,592,0,0" VerticalAlignment="Top" FontSize="16"/>
         <TextBox x:Name="textBox_Error" HorizontalAlignment="Left" Height="23" Margin="849,638,0,0" TextWrapping="Wrap" Text="NAN" VerticalAlignment="Top" Width="120" FontSize="14"/>
         <Button x:Name="button_get_error" Content="get Error" HorizontalAlignment="Left" Margin="832,679,0,0" VerticalAlignment="Top" Width="166" Height="49" Click="Button_get_error_Click"/>
+        <Label x:Name="label7" Content="(24...31)" HorizontalAlignment="Left" Margin="326,26,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label7_Copy" Content="(15...20)" HorizontalAlignment="Left" Margin="559,242,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label7_Copy1" Content="(3...9)" HorizontalAlignment="Left" Margin="264,254,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label7_Copy2" Content="(2,3,4)" HorizontalAlignment="Left" Margin="818,43,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label7_Copy3" Content="(1...9)" HorizontalAlignment="Left" Margin="818,81,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label7_Copy4" Content="(0...49)" HorizontalAlignment="Left" Margin="927,377,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label7_Copy5" Content="(0...49)" HorizontalAlignment="Left" Margin="927,403,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label7_Copy6" Content="(0...49)" HorizontalAlignment="Left" Margin="927,429,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label7_Copy7" Content="(14...21)" HorizontalAlignment="Left" Margin="559,508,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
